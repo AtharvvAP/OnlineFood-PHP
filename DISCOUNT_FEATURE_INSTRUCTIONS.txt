@@ -1,0 +1,71 @@
+DISCOUNT FEATURE IMPLEMENTATION - COMPLETE ✓
+============================================
+
+The discount feature has been successfully added to your food ordering system!
+
+WHAT WAS CHANGED:
+-----------------
+
+1. DATABASE CHANGES:
+   ✓ Added 'discount' column to dishes table (DECIMAL 5,2)
+   ✓ SQL file created: DATABASE FILE/add_discount_column.sql
+
+2. ADMIN PANEL CHANGES:
+   ✓ admin/add_menu.php: Added discount field (0-100%) when adding new dishes
+   ✓ admin/update_menu.php: Added discount field when updating existing dishes
+   ✓ admin/update_menu.php: Fixed to work without uploading new image
+   ✓ admin/update_menu.php: Fixed restaurant dropdown to preserve selection
+   ✓ admin/all_menu.php: Added discount column to display discounts in the menu list
+
+3. CUSTOMER-FACING CHANGES:
+   ✓ index.php (HOME PAGE): Shows discount badges and discounted prices on popular dishes
+   ✓ dishes.php: Shows original price (strikethrough) and discounted price with discount badge
+   ✓ dishes.php: Cart displays discount badge on items with discounts
+   ✓ product-action.php: Calculates and stores discounted prices in cart
+   ✓ checkout.php: Automatically uses discounted prices from cart
+
+HOW TO USE:
+-----------
+
+1. ✓ DONE: Database column added
+
+2. Add/Edit Menu Items:
+   - Go to Admin Panel > Menu > Add Menu or Update Menu
+   - Enter discount as a percentage (e.g., 10 for 10% off, 25.5 for 25.5% off)
+   - Leave as 0 for no discount
+   - Click Save (works with or without uploading new image)
+
+3. Customer View:
+   - HOME PAGE: Popular dishes show discount badges and discounted prices
+   - MENU PAGE: Items with discounts show:
+     * Original price (crossed out in gray)
+     * Discounted price in green
+     * Green badge showing discount percentage (top-right on home page)
+   - CART: Shows discount badge on discounted items
+   - CHECKOUT: Final price includes all discounts
+
+FEATURES:
+---------
+✓ Percentage-based discounts (0-100%)
+✓ Visual indicators (strikethrough original price, green discounted price)
+✓ Discount badges on products (home page and menu page)
+✓ Discount badges in cart
+✓ Automatic price calculation
+✓ Works with existing cart and checkout system
+✓ Update menu without re-uploading images
+✓ Restaurant/cafe selection preserved during updates
+
+DISPLAY LOCATIONS:
+------------------
+✓ Home Page (index.php) - Popular dishes section
+✓ Menu Page (dishes.php) - All dishes with discount badges
+✓ Shopping Cart - Discount indicators
+✓ Admin Panel - Discount management
+
+NOTES:
+------
+- Discounts are stored as percentages in the database
+- If discount is 0 or not set, regular price is shown
+- Discounted prices are calculated when items are added to cart
+- All prices display with ₹ (Rupee) symbol
+- Green color (#28a745) used for discount indicators

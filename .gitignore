@@ -1,0 +1,67 @@
+# Environment Configuration
+.env
+config/config.php
+
+# Cache & Logs
+cache/*
+!cache/.gitkeep
+logs/*
+!logs/.gitkeep
+*.log
+
+# Uploads
+uploads/*
+!uploads/.gitkeep
+admin/Res_img/dishes/*
+!admin/Res_img/dishes/.gitkeep
+admin/Res_img/restaurant/*
+!admin/Res_img/restaurant/.gitkeep
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Composer
+/vendor/
+composer.lock
+
+# Node modules
+node_modules/
+package-lock.json
+yarn.lock
+
+# Build files
+*.min.css
+*.min.js
+dist/
+build/
+
+# Backup files
+*.sql
+*.sql.gz
+*.bak
+backup/
+
+# OS Files
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Security
+.htpasswd
+*.pem
+*.key
+*.crt
+
+# Database
+*.sqlite
+*.db
